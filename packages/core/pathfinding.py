@@ -25,7 +25,7 @@ class VirtualGraph:
 
 
 def dijkstra_find_path(
-        graph: VirtualGraph, start: Tuple[float, float], end: Tuple[float, float]
+    graph: VirtualGraph, start: Tuple[float, float], end: Tuple[float, float]
 ) -> Optional[List[Tuple[float, float]]]:
     """Поиск кратчайшего пути по координатам в виртуальном графе."""
     distances = {start: 0.0}
@@ -61,17 +61,23 @@ def qpoint_to_tuple(pt: QPointF) -> Tuple[float, float]:
     return (float(pt.x()), float(pt.y()))
 
 
+def calculate_path_length(path: List[Tuple[float, float]]) -> float:
+    """Вычисляет общую длину пути по списку координат."""
+    total = 0.0
+    for i in range(len(path) - 1):
+        total += distance(path[i], path[i + 1])
+    return total
+
+
 def build_floor_graph(
-        points_db: Dict[int, MapPoint], corridors: List[CorridorSegment], floor: int
+    points_db: Dict[int, MapPoint], corridors: List[CorridorSegment], floor: int
 ) -> VirtualGraph:
-    """
-    Строит граф коридоров строго по заданным отрезкам corridors и узлам.
-    """
+    """Строит граф коридоров и подключений для указанного этажа."""
     v_graph = VirtualGraph()
     floor_corridors = [c for c in corridors if c.floor == floor]
     floor_points = [p for p in points_db.values() if p.floor == floor]
 
-    # 1. Добавляем основные ребра коридоров
+    # 1. Основные ребра коридоров
     for corr in floor_corridors:
         if corr.start_node_id not in points_db or corr.end_node_id not in points_db:
             continue
@@ -81,7 +87,6 @@ def build_floor_graph(
 
         points_on_segment = [a, b]
 
-        # Пересечения с другими коридорами
         for other in floor_corridors:
             if other.id == corr.id:
                 continue
@@ -92,14 +97,13 @@ def build_floor_graph(
                 if intersect:
                     points_on_segment.append(intersect)
 
-        # Сортируем и соединяем ребра коридора
         points_on_segment = list(set(points_on_segment))
         points_on_segment.sort(key=lambda pt: distance(a, pt))
 
         for i in range(len(points_on_segment) - 1):
             v_graph.add_edge(points_on_segment[i], points_on_segment[i + 1])
 
-    # 2. Подключаем точки кабинетов и лестниц к ближайшему отрезку коридора
+    # 2. Подключение точек (кабинетов и лестниц) к коридорам
     for p in floor_points:
         if p.point_type in (PointType.ROOM, PointType.STAIR):
             p_tuple = qpoint_to_tuple(p.coords)
@@ -120,7 +124,6 @@ def build_floor_graph(
                     best_proj = proj
                     best_segment = (a, b)
 
-            # Соединяем точку с её проекцией на коридор
             if best_proj and best_segment:
                 v_graph.add_edge(p_tuple, best_proj)
                 v_graph.add_edge(best_segment[0], best_proj)
@@ -130,10 +133,10 @@ def build_floor_graph(
 
 
 def build_full_route(
-        points_db: Dict[int, MapPoint],
-        corridors: List[CorridorSegment],
-        start_id: int,
-        end_id: int,
+    points_db: Dict[int, MapPoint],
+    corridors: List[CorridorSegment],
+    start_id: int,
+    end_id: int,
 ) -> Tuple[List[MapPoint], str]:
     if start_id not in points_db or end_id not in points_db:
         return [], "Одна из выбранных точек не найдена."
@@ -144,7 +147,7 @@ def build_full_route(
     start_tuple = qpoint_to_tuple(start_pt.coords)
     end_tuple = qpoint_to_tuple(end_pt.coords)
 
-    # Одноэтажный маршрут
+    # 1. Одноэтажный маршрут
     if start_pt.floor == end_pt.floor:
         floor = start_pt.floor
         v_graph = build_floor_graph(points_db, corridors, floor)
@@ -164,7 +167,7 @@ def build_full_route(
         ]
         return route_pts, f"Маршрут построен по {floor} этажу."
 
-    # Многоэтажный маршрут
+    # 2. Многоэтажный маршрут
     start_stairs = [
         p for p in points_db.values()
         if p.floor == start_pt.floor and p.point_type == PointType.STAIR
@@ -177,31 +180,47 @@ def build_full_route(
     if not start_stairs or not end_stairs:
         return [], "Нет доступных лестниц для перехода между этажами."
 
-    best_stair_start = min(
-        start_stairs, key=lambda s: distance(start_tuple, qpoint_to_tuple(s.coords))
-    )
-    best_stair_end = min(
-        end_stairs, key=lambda s: distance(qpoint_to_tuple(best_stair_start.coords), qpoint_to_tuple(s.coords))
-    )
+    v_graph_start = build_floor_graph(points_db, corridors, start_pt.floor)
+    v_graph_end = build_floor_graph(points_db, corridors, end_pt.floor)
 
-    stair_start_tuple = qpoint_to_tuple(best_stair_start.coords)
-    stair_end_tuple = qpoint_to_tuple(best_stair_end.coords)
+    best_total_length = float("inf")
+    best_path_start = None
+    best_path_end = None
+    chosen_stair_name = ""
 
-    v_graph_1 = build_floor_graph(points_db, corridors, start_pt.floor)
-    path1 = dijkstra_find_path(v_graph_1, start_tuple, stair_start_tuple)
+    # Ищем совпадающие по названию/идентификатору лестницы на обоих этажах
+    for st_start in start_stairs:
+        # Сопоставляем по имени (например "1", "2" или "Лестница №1")
+        st_end = next((s for s in end_stairs if s.name.strip() == st_start.name.strip()), None)
+        if not st_end:
+            continue
 
-    v_graph_2 = build_floor_graph(points_db, corridors, end_pt.floor)
-    path2 = dijkstra_find_path(v_graph_2, stair_end_tuple, end_tuple)
+        st_start_tuple = qpoint_to_tuple(st_start.coords)
+        st_end_tuple = qpoint_to_tuple(st_end.coords)
 
-    if not path1 or not path2:
-        return [], "Не удалось построить межэтажный маршрут."
+        # Строим пути до выбранной парной лестницы на обоих этажах
+        p1 = dijkstra_find_path(v_graph_start, start_tuple, st_start_tuple)
+        p2 = dijkstra_find_path(v_graph_end, st_end_tuple, end_tuple)
+
+        if p1 and p2:
+            total_len = calculate_path_length(p1) + calculate_path_length(p2)
+            if total_len < best_total_length:
+                best_total_length = total_len
+                best_path_start = p1
+                best_path_end = p2
+                chosen_stair_name = st_start.name
+
+    if not best_path_start or not best_path_end:
+        return [], "Не удалось построить связный маршрут между этажами по имеющимся лестницам."
 
     route1 = [
-        MapPoint(-1, "Маршрут 1", QPointF(c[0], c[1]), start_pt.floor) for c in path1
+        MapPoint(-1, "Маршрут 1", QPointF(c[0], c[1]), start_pt.floor)
+        for c in best_path_start
     ]
     route2 = [
-        MapPoint(-1, "Маршрут 2", QPointF(c[0], c[1]), end_pt.floor) for c in path2
+        MapPoint(-1, "Маршрут 2", QPointF(c[0], c[1]), end_pt.floor)
+        for c in best_path_end
     ]
 
-    info = f"Переход с {start_pt.floor} этажа на {end_pt.floor} этаж через {best_stair_start.name}."
+    info = f"Переход с {start_pt.floor} этажа на {end_pt.floor} этаж через лестницу '{chosen_stair_name}'."
     return route1 + route2, info

@@ -5,8 +5,8 @@
         3,
         4
     ],
-    "next_point_id": 19,
-    "next_corridor_id": 10,
+    "next_point_id": 38,
+    "next_corridor_id": 24,
     "corridors": [
         {
             "id": 1,
@@ -57,10 +57,82 @@
             "end_node_id": 4
         },
         {
-            "id": 9,
+            "id": 11,
             "floor": 2,
-            "start_node_id": 7,
-            "end_node_id": 8
+            "start_node_id": 20,
+            "end_node_id": 11
+        },
+        {
+            "id": 12,
+            "floor": 2,
+            "start_node_id": 19,
+            "end_node_id": 11
+        },
+        {
+            "id": 13,
+            "floor": 1,
+            "start_node_id": 30,
+            "end_node_id": 31
+        },
+        {
+            "id": 14,
+            "floor": 1,
+            "start_node_id": 29,
+            "end_node_id": 30
+        },
+        {
+            "id": 15,
+            "floor": 1,
+            "start_node_id": 29,
+            "end_node_id": 28
+        },
+        {
+            "id": 16,
+            "floor": 1,
+            "start_node_id": 26,
+            "end_node_id": 28
+        },
+        {
+            "id": 17,
+            "floor": 1,
+            "start_node_id": 27,
+            "end_node_id": 26
+        },
+        {
+            "id": 18,
+            "floor": 1,
+            "start_node_id": 25,
+            "end_node_id": 26
+        },
+        {
+            "id": 19,
+            "floor": 1,
+            "start_node_id": 25,
+            "end_node_id": 4
+        },
+        {
+            "id": 20,
+            "floor": 1,
+            "start_node_id": 5,
+            "end_node_id": 27
+        },
+        {
+            "id": 21,
+            "floor": 1,
+            "start_node_id": 25,
+            "end_node_id": 32
+        },
+        {
+            "id": 22,
+            "floor": 2,
+            "start_node_id": 8,
+            "end_node_id": 37
+        },
+        {
+            "id": 23,
+            "floor": 2,
+            "start_node_id": 36,
+            "end_node_id": 20
         }
     ],
     "points": [
@@ -167,23 +239,6 @@
             "font_size": 10
         },
         {
-            "id": 7,
-            "name": "2",
-            "floor": 2,
-            "coords": [
-                -231.1871819137048,
-                -354.48701226768065
-            ],
-            "point_type": "stair",
-            "alias": "",
-            "is_favorite": false,
-            "label_offset": [
-                0.0,
-                0.0
-            ],
-            "font_size": 10
-        },
-        {
             "id": 8,
             "name": "Точка #8",
             "floor": 2,
@@ -205,8 +260,8 @@
             "name": "Точка #9",
             "floor": 2,
             "coords": [
-                -282.0,
-                283.0
+                -277.864692560846,
+                286.75937039923093
             ],
             "point_type": "corridor_node",
             "alias": "",
@@ -222,8 +277,8 @@
             "name": "Точка #10",
             "floor": 2,
             "coords": [
-                -276.0,
-                -305.0
+                -278.63006492972795,
+                -308.28758116216
             ],
             "point_type": "corridor_node",
             "alias": "",
@@ -239,8 +294,8 @@
             "name": "Точка #11",
             "floor": 2,
             "coords": [
-                327.0,
-                -312.0
+                330.93762985945585,
+                -305.42483767568007
             ],
             "point_type": "corridor_node",
             "alias": "",
@@ -345,6 +400,295 @@
                 -235.16068052930058
             ],
             "point_type": "room",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 19,
+            "name": "Точка #19",
+            "floor": 2,
+            "coords": [
+                338.0556222395385,
+                282.6831222395386
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 20,
+            "name": "Точка #20",
+            "floor": 2,
+            "coords": [
+                331.2005321722446,
+                -351.87706936801476
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 22,
+            "name": "3",
+            "floor": 2,
+            "coords": [
+                -294.7346392997046,
+                281.2009058624733
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 23,
+            "name": "4",
+            "floor": 2,
+            "coords": [
+                352.4001122061686,
+                276.55890067385775
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 24,
+            "name": "Вход",
+            "floor": 1,
+            "coords": [
+                13.101221245072423,
+                -324.77245223285036
+            ],
+            "point_type": "room",
+            "alias": "",
+            "is_favorite": true,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 25,
+            "name": "Точка #25",
+            "floor": 1,
+            "coords": [
+                160.87560117252355,
+                -305.22717256022713
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 26,
+            "name": "Точка #26",
+            "floor": 1,
+            "coords": [
+                161.16459463521497,
+                -260.9357902170123
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 27,
+            "name": "Точка #27",
+            "floor": 1,
+            "coords": [
+                160.7775305905701,
+                -242.67089844485787
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 28,
+            "name": "Точка #28",
+            "floor": 1,
+            "coords": [
+                322.94304993122216,
+                -260.5323145645441
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 29,
+            "name": "Точка #29",
+            "floor": 1,
+            "coords": [
+                329.60669615526854,
+                92.31587939654464
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 30,
+            "name": "Точка #30",
+            "floor": 1,
+            "coords": [
+                431.2569195633309,
+                92.76427649591602
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 31,
+            "name": "Точка #31",
+            "floor": 1,
+            "coords": [
+                434.51215377817226,
+                289.4966612358752
+            ],
+            "point_type": "corridor_node",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 32,
+            "name": "2",
+            "floor": 1,
+            "coords": [
+                206.94303596522602,
+                -317.8053766608828
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 33,
+            "name": "3",
+            "floor": 1,
+            "coords": [
+                -315.90205442374446,
+                279.0715332115864
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 34,
+            "name": "4",
+            "floor": 1,
+            "coords": [
+                418.97807687656245,
+                276.10531673812415
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 36,
+            "name": "2",
+            "floor": 2,
+            "coords": [
+                283.0805910620888,
+                -352.62894344786093
+            ],
+            "point_type": "stair",
+            "alias": "",
+            "is_favorite": false,
+            "label_offset": [
+                0.0,
+                0.0
+            ],
+            "font_size": 10
+        },
+        {
+            "id": 37,
+            "name": "1",
+            "floor": 2,
+            "coords": [
+                -229.69753139300957,
+                -355.63643976724563
+            ],
+            "point_type": "stair",
             "alias": "",
             "is_favorite": false,
             "label_offset": [
