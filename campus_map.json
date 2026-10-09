@@ -1,0 +1,1218 @@
+{
+    "floors_list": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "next_point_id": 76,
+    "corridors": [
+        [
+            41,
+            1
+        ],
+        [
+            2,
+            1
+        ],
+        [
+            3,
+            2
+        ],
+        [
+            4,
+            3
+        ],
+        [
+            5,
+            4
+        ],
+        [
+            6,
+            5
+        ],
+        [
+            7,
+            6
+        ],
+        [
+            8,
+            7
+        ],
+        [
+            38,
+            8
+        ],
+        [
+            9,
+            8
+        ],
+        [
+            37,
+            9
+        ],
+        [
+            10,
+            9
+        ],
+        [
+            36,
+            10
+        ],
+        [
+            11,
+            10
+        ],
+        [
+            12,
+            11
+        ],
+        [
+            35,
+            12
+        ],
+        [
+            34,
+            13
+        ],
+        [
+            13,
+            12
+        ],
+        [
+            23,
+            13
+        ],
+        [
+            24,
+            23
+        ],
+        [
+            14,
+            24
+        ],
+        [
+            16,
+            14
+        ],
+        [
+            15,
+            14
+        ],
+        [
+            39,
+            15
+        ],
+        [
+            25,
+            16
+        ],
+        [
+            25,
+            26
+        ],
+        [
+            26,
+            27
+        ],
+        [
+            27,
+            28
+        ],
+        [
+            29,
+            28
+        ],
+        [
+            29,
+            30
+        ],
+        [
+            31,
+            30
+        ],
+        [
+            17,
+            31
+        ],
+        [
+            17,
+            18
+        ],
+        [
+            18,
+            19
+        ],
+        [
+            33,
+            19
+        ],
+        [
+            19,
+            40
+        ],
+        [
+            18,
+            20
+        ],
+        [
+            20,
+            21
+        ],
+        [
+            21,
+            22
+        ],
+        [
+            22,
+            42
+        ],
+        [
+            68,
+            69
+        ],
+        [
+            69,
+            70
+        ],
+        [
+            70,
+            67
+        ],
+        [
+            67,
+            66
+        ],
+        [
+            66,
+            65
+        ],
+        [
+            65,
+            64
+        ],
+        [
+            64,
+            63
+        ],
+        [
+            63,
+            62
+        ],
+        [
+            62,
+            61
+        ],
+        [
+            60,
+            61
+        ],
+        [
+            60,
+            59
+        ],
+        [
+            59,
+            58
+        ],
+        [
+            58,
+            57
+        ],
+        [
+            57,
+            56
+        ],
+        [
+            56,
+            55
+        ],
+        [
+            55,
+            54
+        ],
+        [
+            54,
+            53
+        ],
+        [
+            53,
+            52
+        ],
+        [
+            52,
+            51
+        ],
+        [
+            51,
+            49
+        ],
+        [
+            45,
+            49
+        ],
+        [
+            69,
+            43
+        ],
+        [
+            70,
+            71
+        ],
+        [
+            44,
+            73
+        ],
+        [
+            72,
+            73
+        ],
+        [
+            72,
+            71
+        ],
+        [
+            71,
+            75
+        ],
+        [
+            75,
+            74
+        ],
+        [
+            33,
+            15
+        ]
+    ],
+    "points": [
+        {
+            "id": 1,
+            "name": "Точка #1",
+            "alias": "",
+            "x": -301.0830853343215,
+            "y": 278.9945971325936,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 2,
+            "name": "Точка #2",
+            "alias": "",
+            "x": -300.4034395434991,
+            "y": 244.18859259607586,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 3,
+            "name": "Точка #3",
+            "alias": "",
+            "x": -300.2464492173584,
+            "y": 208.49426745633497,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 4,
+            "name": "Точка #4",
+            "alias": "",
+            "x": -300.25937033892353,
+            "y": 176.72082673538802,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 5,
+            "name": "Точка #5",
+            "alias": "",
+            "x": -301.240075660462,
+            "y": 141.02650159564718,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 6,
+            "name": "Точка #6",
+            "alias": "",
+            "x": -301.0402473887103,
+            "y": 42.355560384038235,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 7,
+            "name": "Точка #7",
+            "alias": "",
+            "x": -301.4738953371758,
+            "y": -25.48671715583985,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 8,
+            "name": "Точка #8",
+            "alias": "",
+            "x": -301.93264257284943,
+            "y": -108.57341508387778,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 9,
+            "name": "Точка #9",
+            "alias": "",
+            "x": -300.84519107669155,
+            "y": -139.63321860904028,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 10,
+            "name": "Точка #10",
+            "alias": "",
+            "x": -301.252996782027,
+            "y": -168.72206757165984,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 11,
+            "name": "Точка #11",
+            "alias": "",
+            "x": -301.2699924845082,
+            "y": -202.517449962593,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 12,
+            "name": "Точка #12",
+            "alias": "",
+            "x": -301.6098153799194,
+            "y": -224.77584961202646,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 13,
+            "name": "Точка #13",
+            "alias": "",
+            "x": -300.3014653286127,
+            "y": -260.3043378849777,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 14,
+            "name": "Точка #14",
+            "alias": "",
+            "x": -153.6339401308237,
+            "y": -262.5131867051505,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 15,
+            "name": "Точка #15",
+            "alias": "",
+            "x": -153.24313012796927,
+            "y": -306.6901631086062,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 16,
+            "name": "Точка #16",
+            "alias": "",
+            "x": -152.59747574210897,
+            "y": -243.8059317550535,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 17,
+            "name": "Точка #17",
+            "alias": "",
+            "x": 160.22649518637988,
+            "y": -242.6335473235954,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 18,
+            "name": "Точка #18",
+            "alias": "",
+            "x": 161.07605242490786,
+            "y": -260.4742493326833,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 19,
+            "name": "Точка #19",
+            "alias": "",
+            "x": 158.6972921570295,
+            "y": -304.82113718384466,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 20,
+            "name": "Точка #20",
+            "alias": "",
+            "x": 322.66183919293246,
+            "y": -261.1692600543787,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 21,
+            "name": "Точка #21",
+            "alias": "",
+            "x": 329.7208467381514,
+            "y": 92.60173899955146,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 22,
+            "name": "Точка #22",
+            "alias": "",
+            "x": 430.4937001584446,
+            "y": 92.3545542934296,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 23,
+            "name": "Точка #23",
+            "alias": "",
+            "x": -239.4392212221511,
+            "y": -260.9839836758001,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 24,
+            "name": "Точка #24",
+            "alias": "",
+            "x": -202.02471132195723,
+            "y": -261.66362946662247,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 25,
+            "name": "Точка #25",
+            "alias": "",
+            "x": -138.46083417758211,
+            "y": -242.6335473235954,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 26,
+            "name": "Точка #26",
+            "alias": "",
+            "x": -108.06368074076097,
+            "y": -242.1238129804786,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 27,
+            "name": "Точка #27",
+            "alias": "",
+            "x": -0.7136371957845379,
+            "y": -241.9199101278109,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 28,
+            "name": "Точка #28",
+            "alias": "",
+            "x": 32.45308651176941,
+            "y": -242.9733702190066,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 29,
+            "name": "Точка #29",
+            "alias": "",
+            "x": 64.56635012812762,
+            "y": -243.82292745753455,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 30,
+            "name": "Точка #30",
+            "alias": "",
+            "x": 95.52422501550879,
+            "y": -242.10681727799758,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 31,
+            "name": "Точка #31",
+            "alias": "",
+            "x": 127.09376288378806,
+            "y": -242.4636358758898,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 33,
+            "name": "Вход",
+            "alias": "",
+            "x": 13.93273871185912,
+            "y": -305.16096007925586,
+            "floor": 1,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 34,
+            "name": "101",
+            "alias": "",
+            "x": -317.3953093863522,
+            "y": -257.1919988525555,
+            "floor": 1,
+            "point_type": "Кабинет/Дверь",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 35,
+            "name": "102",
+            "alias": "",
+            "x": -316.88262917695727,
+            "y": -227.23809267061853,
+            "floor": 1,
+            "point_type": "Кабинет/Дверь",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 36,
+            "name": "103",
+            "alias": "",
+            "x": -317.8474398171761,
+            "y": -167.99070960110095,
+            "floor": 1,
+            "point_type": "Кабинет/Дверь",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 37,
+            "name": "104",
+            "alias": "",
+            "x": -316.7740381572211,
+            "y": -138.44089260882285,
+            "floor": 1,
+            "point_type": "Кабинет/Дверь",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 38,
+            "name": "105",
+            "alias": "",
+            "x": -316.88262917695727,
+            "y": -107.66992487162835,
+            "floor": 1,
+            "point_type": "Кабинет/Дверь",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 39,
+            "name": "1",
+            "alias": "",
+            "x": -185.12960345662222,
+            "y": -319.43352168652615,
+            "floor": 1,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 40,
+            "name": "2",
+            "alias": "",
+            "x": 206.84871894594662,
+            "y": -317.5127835820281,
+            "floor": 1,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 41,
+            "name": "3",
+            "alias": "",
+            "x": -316.47853998729823,
+            "y": 279.8367669168734,
+            "floor": 1,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 42,
+            "name": "4",
+            "alias": "",
+            "x": 418.57958156887815,
+            "y": 275.83134752541093,
+            "floor": 1,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 43,
+            "name": "1",
+            "alias": "",
+            "x": -228.87919012641652,
+            "y": -355.4932101963491,
+            "floor": 2,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 44,
+            "name": "2",
+            "alias": "",
+            "x": 282.8893665198843,
+            "y": -353.72238474082553,
+            "floor": 2,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 45,
+            "name": "3",
+            "alias": "",
+            "x": -295.1365212589205,
+            "y": 281.2149872372733,
+            "floor": 2,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 46,
+            "name": "4",
+            "alias": "",
+            "x": 353.1007265490515,
+            "y": 276.40573002979517,
+            "floor": 2,
+            "point_type": "Лестница",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 49,
+            "name": "Точка #49",
+            "alias": "",
+            "x": -279.09749027273045,
+            "y": 280.87192110595936,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 51,
+            "name": "Точка #51",
+            "alias": "",
+            "x": -279.21996697853194,
+            "y": 245.01349212808105,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 52,
+            "name": "Точка #52",
+            "alias": "",
+            "x": -278.94474078769093,
+            "y": 227.34299750974745,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 53,
+            "name": "Точка #53",
+            "alias": "",
+            "x": -279.0285263035278,
+            "y": 211.04245308304309,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 54,
+            "name": "Точка #54",
+            "alias": "",
+            "x": -279.0416640461449,
+            "y": 195.67688435762335,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 55,
+            "name": "Точка #55",
+            "alias": "",
+            "x": -278.9853813364513,
+            "y": 175.56634731890296,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 56,
+            "name": "Точка #56",
+            "alias": "",
+            "x": -278.8505989191472,
+            "y": 141.99039398969043,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 57,
+            "name": "Точка #57",
+            "alias": "",
+            "x": -278.8505989191472,
+            "y": 108.3131851588023,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 58,
+            "name": "Точка #58",
+            "alias": "",
+            "x": -278.8505989191473,
+            "y": 74.13950641885933,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 59,
+            "name": "Точка #59",
+            "alias": "",
+            "x": -278.68510894946235,
+            "y": 40.21406263344379,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 60,
+            "name": "Точка #60",
+            "alias": "",
+            "x": -278.7678539343048,
+            "y": 4.88195410570614,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 61,
+            "name": "Точка #61",
+            "alias": "",
+            "x": -278.6023639646198,
+            "y": -30.78113436140142,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 62,
+            "name": "Точка #62",
+            "alias": "",
+            "x": -278.6851089494623,
+            "y": -63.96187328323467,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 63,
+            "name": "Точка #63",
+            "alias": "",
+            "x": -278.60236396461977,
+            "y": -98.88025688675992,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 64,
+            "name": "Точка #64",
+            "alias": "",
+            "x": -278.68510894946223,
+            "y": -133.46766055091524,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 65,
+            "name": "Точка #65",
+            "alias": "",
+            "x": -278.6851089494622,
+            "y": -166.06918457885115,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 66,
+            "name": "Точка #66",
+            "alias": "",
+            "x": -278.6023639646198,
+            "y": -200.40929303878661,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 67,
+            "name": "Точка #67",
+            "alias": "",
+            "x": -278.5196189797773,
+            "y": -232.67889737704508,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 68,
+            "name": "Точка #68",
+            "alias": "",
+            "x": -278.39637540163017,
+            "y": -367.29605830299107,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 69,
+            "name": "Точка #69",
+            "alias": "",
+            "x": -278.47183271671827,
+            "y": -354.83093456726533,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 70,
+            "name": "Точка #70",
+            "alias": "",
+            "x": -278.4369215474429,
+            "y": -307.2292631061444,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 71,
+            "name": "Точка #71",
+            "alias": "",
+            "x": 331.49471628105005,
+            "y": -307.37904985413763,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 72,
+            "name": "Точка #72",
+            "alias": "",
+            "x": 331.02871306507103,
+            "y": -342.5123637445531,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 73,
+            "name": "Точка #73",
+            "alias": "",
+            "x": 330.8127813096171,
+            "y": -355.02911610465213,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 74,
+            "name": "Точка #74",
+            "alias": "",
+            "x": 333.35746011835073,
+            "y": -236.4129595676079,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        },
+        {
+            "id": 75,
+            "name": "Точка #75",
+            "alias": "",
+            "x": 333.10434131795716,
+            "y": -252.35944399240375,
+            "floor": 2,
+            "point_type": "Обычная",
+            "is_favorite": false,
+            "label_offset_x": 0.0,
+            "label_offset_y": 0.0,
+            "font_size": 10
+        }
+    ],
+    "floor_images": {
+        "1": "unikfoto\\photo_5327816801259297345_y.jpg",
+        "2": "unikfoto\\photo_5327816801259297346_y.jpg",
+        "3": "unikfoto\\photo_5327816801259297347_y.jpg",
+        "4": "unikfoto\\photo_5327816801259297348_y.jpg"
+    }
+}
